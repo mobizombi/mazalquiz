@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יצירת חידון לשמחה - מזל קוויז</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="logo" href="./" id="logo">מזל <b>קוויז</b></a>
+    <div class="langs" id="langs"></div>
+  </div>
+
+  <h1 id="h1" style="margin:8px 0 4px">יוצרים חידון לשמחה</h1>
+  <p class="muted" id="sub">בוחרים אירוע, ממלאים את התשובות הנכונות - את התשובות השגויות כבר הכנו לכם.</p>
+
+  <div class="card" style="margin-top:18px">
+    <div class="lbl" id="l-ev" style="margin-top:0">איזה אירוע?</div>
+    <div class="evtypes" id="evtypes"></div>
+    <div id="names"></div>
+    <label class="lbl" id="l-title" for="title">כותרת החידון</label>
+    <input class="field" id="title">
+    <label class="lbl" id="l-time" for="qtime">זמן לכל שאלה</label>
+    <select class="field" id="qtime" style="max-width:220px">
+      <option value="15">15 שניות</option><option value="20" selected>20 שניות</option><option value="30">30 שניות</option>
+    </select>
+  </div>
+
+  <h2 id="h-q" style="margin:28px 0 6px">השאלות</h2>
+  <p class="muted" id="qhint" style="margin:0 0 14px">מלאו את התשובה הנכונה (מסומנת בירוק). אפשר לערוך כל דבר, לכבות שאלות או להוסיף משלכם.</p>
+  <div id="qlist"></div>
+  <button class="btn btn-ghost" id="addq">+ שאלה משלי</button>
+
+  <div class="sticky-bar">
+    <span class="muted" id="count" style="align-self:center"></span>
+    <button class="btn btn-gold" id="go">🎉 פותחים משחק</button>
+  </div>
+  <p class="toast hidden" id="toast"></p>
+</div>
+<script src="js/common.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/create.js"></script>
+</body>
+</html>
