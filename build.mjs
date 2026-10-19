@@ -41,7 +41,7 @@ ${hreflang}
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${canonical}">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎉</text></svg>">
+<link rel="icon" href="${rel}favicon.svg" type="image/svg+xml"><link rel="icon" href="${rel}favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="${rel}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${rel}css/style.css">
